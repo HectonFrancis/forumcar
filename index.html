@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fórum sobre carros - discussões, avaliações e dicas automotivas">
+    <title>Fórum Carros - Discussões Automotivas</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background-color: #222;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f4a261;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .topic {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .topic:last-child {
+            border: none;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            background-color: #f4a261;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #e76f51;
+        }
+
+        .comment {
+            margin-left: 20px;
+            padding: 10px;
+            border-left: 2px solid #ddd;
+        }
+
+        .rating {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .rating button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 18px;
+            color: #888;
+        }
+
+        .rating button:hover {
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Fórum Carros</h1>
+        <p>Discussões e avaliações para apaixonados por automóveis!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#categories">Categorias</a>
+        <a href="#create-topic">Criar Tópico</a>
+        <a href="#login">Login</a>
+    </nav>
+
+    <div class="container">
+        <section id="topics">
+            <h2>Tópicos Recentes</h2>
+            <div class="topic">
+                <h3>Qual é o melhor SUV de 2024?</h3>
+                <p>Discussão sobre SUVs modernos e suas características.</p>
+                <button class="btn">Ver Discussão</button>
+            </div>
+            <div class="topic">
+                <h3>Manutenção preventiva: dicas essenciais</h3>
+                <p>Como economizar em manutenção com práticas simples.</p>
+                <button class="btn">Ver Discussão</button>
+            </div>
+        </section>
+
+        <section id="topic-details">
+            <h2>Tópico: Qual é o melhor SUV de 2024?</h2>
+            <p>Publicado por <strong>JoãoCarFan</strong> em 22/11/2024.</p>
+            <p>Opiniões sobre os melhores SUVs do mercado. Qual é o seu favorito?</p>
+
+            <div class="comment">
+                <p><strong>Comentário de MariaAuto:</strong> Eu adoro o Toyota RAV4, é super econômico e confiável!</p>
+                <div class="rating">
+                    <button>👍 12</button>
+                    <button>👎 2</button>
+                </div>
+            </div>
+
+            <div class="comment">
+                <p><strong>Comentário de PedroMotor:</strong> Prefiro o Hyundai Tucson, tem tecnologia de ponta.</p>
+                <div class="rating">
+                    <button>👍 9</button>
+                    <button>👎 1</button>
+                </div>
+            </div>
+
+            <button class="btn">Responder</button>
+        </section>
+
+        <section id="create-topic">
+            <h2>Criar Novo Tópico</h2>
+            <form action="/create-topic" method="POST">
+                <label for="title">Título:</label><br>
+                <input type="text" id="title" name="title" required><br><br>
+                <label for="content">Descrição:</label><br>
+                <textarea id="content" name="content" rows="5" required></textarea><br><br>
+                <button type="submit" class="btn">Publicar</button>
+            </form>
+        </section>
+
+        <section id="login">
+            <h2>Entrar ou Registrar</h2>
+            <p>Área para login e registro (em construção).</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fórum Carros. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
