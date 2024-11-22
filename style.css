@@ -1,0 +1,213 @@
+/* Estilos globais */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background: linear-gradient(135deg, #0d47a1, #42a5f5);
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1e88e5;
+    padding: 10px;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc80;
+}
+
+/* Conteúdo principal */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    color: #0d47a1;
+}
+
+/* Estilo para tópicos */
+.topic {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.topic h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #0d47a1;
+}
+
+.topic p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.topic .btn {
+    background-color: #42a5f5;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.topic .btn:hover {
+    background-color: #0d47a1;
+    transform: scale(1.05);
+}
+
+/* Comentários */
+.comment {
+    margin-left: 20px;
+    padding: 10px 15px;
+    border-left: 3px solid #42a5f5;
+    margin-bottom: 10px;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+
+.comment strong {
+    color: #0d47a1;
+}
+
+.rating {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating button {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.rating button:hover {
+    color: #0d47a1;
+    transform: scale(1.1);
+}
+
+/* Formulário de criação de tópicos */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #42a5f5;
+    outline: none;
+}
+
+form button {
+    background-color: #42a5f5;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #0d47a1;
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0d47a1;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+/* Tema escuro */
+.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-theme header,
+.dark-theme nav,
+.dark-theme footer {
+    background-color: #1e1e1e;
+}
+
+.dark-theme nav a {
+    color: #ffcc80;
+}
+
+.dark-theme .container {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+.dark-theme .comment {
+    background: #2c2c2c;
+    border-left-color: #ffcc80;
+}
+
+.dark-theme .btn {
+    background-color: #ffcc80;
+    color: #000;
+}
